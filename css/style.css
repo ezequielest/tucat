@@ -1,0 +1,13 @@
+header .slider {
+    height: calc(100vh - 56px);
+    overflow: hidden;
+}
+
+#servicios {
+    background-color: #DD8500;
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+}
