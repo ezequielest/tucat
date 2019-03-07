@@ -1,6 +1,11 @@
-header .slider {
+
+header .slider .item {
     height: calc(100vh - 56px);
     overflow: hidden;
+}
+
+header .slider .item h3{
+    visibility: hidden;
 }
 
 #servicios {
@@ -10,4 +15,16 @@ header .slider {
 
 .center {
     text-align: center;
+}
+
+/**
+* GENERALS
+**/
+
+section:not(.slider) {
+    padding: 60px 0px;
+}
+
+section h1{
+    margin-bottom: 60px;
 }
