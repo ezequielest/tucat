@@ -1,0 +1,60 @@
+
+$(window).on('load',function() {
+    
+    var owl = $(".owl-slider").owlCarousel({
+        items: 1
+    });
+
+    setTimeout(() => {
+        $('nav').animate({ opacity: 1 }, 1000);
+    }, 1000);
+
+    $(".owl-works").owlCarousel();
+
+
+    efectSlideWords()
+
+    owl.on('changed.owl.carousel', function(event) {
+        efectSlideWords ()
+    });
+
+});
+
+
+function efectSlideWords() {
+    setTimeout(() => {
+        $('.item h3').css('display','block').addClass('animated slideInDown')
+    }, 2500);
+
+    setTimeout(() => {
+        $('.item p').css('display','block').addClass('animated slideInDown')
+    }, 3500);
+
+    resetEffect();
+}
+
+function resetEffect () {
+    $('.item h3').css('display','none').removeClass('animated slideInDown')
+    $('.item p').css('display','none').removeClass('animated slideInDown')
+}
+
+
+$(window).scroll(function(){
+    top = $(window).scrollTop();
+
+    if (top > 50 ) {
+        $('nav .navbar').css('background-color', '#fff').css('position', 'fixed');
+    }else{
+        $('nav .navbar').css('background-color', 'transparent').css('position', 'flex');
+    }
+
+    if(top === $(window).scrollHeight) {
+        $('.item h3').css('display','block').addClass('animated slideInDown')
+    } 
+});
+
+$('#up').on('click', function() {
+    $('html, body').animate({
+        scrollTop:0
+    }, 'slow');
+});

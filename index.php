@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./libs/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -53,22 +54,22 @@
         <!-- Set up your HTML -->
         <div class="owl-slider owl-carousel">
           <div class="item" style="background-image: url('https://picsum.photos/1920/1000'); background-size: cover;">
-            <h3 class="animated bounce">AMAMOS LOS DETALLES</h3>
-            <p>Una empresa Marplatense jóven y dinámica.</p>
+            <h3 style="display:none">AMAMOS LOS DETALLES</h3>
+            <p style="display:none">Una empresa Marplatense jóven y dinámica.</p>
           </div>
           <div class="item" style="background-image: url('https://picsum.photos/1920/1000'); background-size: cover;">
-            <h3 class="animated bounce">AMAMOS LOS DETALLES</h3>
-            <p>tenemos como objetivo brindar un servicio de calidad</p>
+            <h3 style="display:none">AMAMOS LOS DETALLES</h3>
+            <p style="display:none">tenemos como objetivo brindar un servicio de calidad</p>
           </div>
           <div class="item" style="background-image: url('https://picsum.photos/1920/1000'); background-size: cover;">
-            <h3 class="animated bounce">AMAMOS LOS DETALLES</h3>
-            <p>tenemos como objetivo brindar un servicio de calidad</p>
+            <h3 style="display:none">AMAMOS LOS DETALLES</h3>
+            <p style="display:none">tenemos como objetivo brindar un servicio de calidad</p>
           </div>
         </div>
       </section>
     </header>
 
-    <section class="container">
+    <section id="elegir" class="container">
       <div class="row">
         <div class="col-sm-12">
           <h3 class="center">PORQUE ELEGIR</h3>
@@ -77,19 +78,21 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-            <h5>Amoblamientos a medida</h5>
-            <p>Trabajos 100% a gusto del cliente en equipamientos integrales para el hogar. Nos especializamos en optimizar los espacios disponibles.</p>
+            <i class="fas fa-ruler-combined center-block"></i>
+            <h5 class="center">Amoblamientos a medida</h5>
+            <p class="center">Trabajos 100% a gusto del cliente en equipamientos integrales para el hogar. Nos especializamos en optimizar los espacios disponibles.</p>
         </div>
         <div class="col-sm-4">
-            <h5>Diseño y ergonomía en nuestros trabajos</h5>
-            <p>Contamos con la experiencia e idoneidad necesaria para trabajar las ideas de los proyectos y transformarlas en el mobiliario esperado, cumpliendo con los plazos y presupuestos pactados.</p>
+            <i class="fas fa-dice-d6 center-block"></i>  
+            <h5 class="center">Diseño y ergonomía en nuestros trabajos</h5>
+            <p class="center">Contamos con la experiencia e idoneidad necesaria para trabajar las ideas de los proyectos y transformarlas en el mobiliario esperado, cumpliendo con los plazos y presupuestos pactados.</p>
         </div>
         <div class="col-sm-4">
-            <h5>Atención personalizada</h5>
-            <p>Siempre orientados a establecer un vínculo entre nuestro cliente y su mobiliario, es por tal motivo, que asesoramos cada propuesta en forma individual y vamos forjando juntos el proyecto a medida.</p>
+            <i class="fas fa-people-carry center-block"></i>
+            <h5 class="center">Atención personalizada</h5>
+            <p class="center">Siempre orientados a establecer un vínculo entre nuestro cliente y su mobiliario, es por tal motivo, que asesoramos cada propuesta en forma individual y vamos forjando juntos el proyecto a medida.</p>
         </div>
       </div>
-
     </section>
 
     <section id="servicios">
@@ -102,16 +105,34 @@
         </div>
         <div class="row">
           <div class="col-sm-4">
-              <h5>COCINAS</h5>
-              <p>Realizamos muebles de cocina enfocándonos en la comodidad, gusto y estilo del cliente. Analizando los espacios de cada vivienda obtenemos los mejores resultados espacio/diseño.</p>
+            <div class="card" style="width: 18rem;">
+              <img src="https://picsum.photos/1920/1000" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">COCINAS</h5>
+                <p class="card-text">Realizamos muebles de cocina enfocándonos en la comodidad, gusto y estilo del cliente. Analizando los espacios de cada vivienda obtenemos los mejores resultados espacio/diseño.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
-              <h5>PLACARES Y VESTIDORES</h5>
-              <p>Diseños exclusivos a gusto de nuestros clientes. Nuestra diversidad de modelos y estilos de mobiliario, nos permite adaptar un perfil diferente a cada espacio de trabajo.</p>
+            <div class="card" style="width: 18rem;">
+              <img src="https://picsum.photos/1920/1000" class="card-img-top" alt="">
+              <div class="card-body">
+                <h5 class="card-title">PLACARES Y VESTIDORES</h5>
+                <p class="card-text">Diseños exclusivos a gusto de nuestros clientes. Nuestra diversidad de modelos y estilos de mobiliario, nos permite adaptar un perfil diferente a cada espacio de trabajo.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
           </div>
           <div class="col-sm-4">
-              <h5>OFICINAS</h5>
-              <p>Aprovechamos cada cm del establecimiento para sacar el máximo provecho, siempre manteniendo un excelente diseño y calidad del producto.</p>
+            <div class="card" style="width: 18rem;">
+                <img src="https://picsum.photos/1920/1000" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 class="card-title">OFICINAS</h5>
+                  <p class="card-text">Aprovechamos cada cm del establecimiento para sacar el máximo provecho, siempre manteniendo un excelente diseño y calidad del producto.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
           </div>
         </div>
       </div>
@@ -123,7 +144,6 @@
       <h3 class="center">ALGUNOS DE NUESTROS</h3>
       <h1 class="center">TRABAJOS TERMINADOS</h1>
 
-      <!-- Set up your HTML -->
       <div class="owl-works owl-carousel">
         <div class="item"> Your Content </div>
         <div class="item"> Your Content </div>
@@ -144,22 +164,26 @@
       </div>
       <div class="row">
         <div class="col-sm-5">
-          <form>
+          <form accept-charset="utf-8" enctype="multipart/form-data">
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="exampleFormControlInput1">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="name@example.com">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Telefono</label>
+                <input type="text" class="form-control" id="tel" name="tel" placeholder="name@example.com">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="text" class="form-control" id="email" name="email" placeholder="name@example.com">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="exampleFormControlTextarea1">Mensaje</label>
+                <textarea class="form-control" id="message" name="message"  rows="3"></textarea>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1">Attach File</label>
+                <input type="file" class="form-control" id="attachFile" name="attachFile" rows="3"></i>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -178,30 +202,39 @@
             </ul>
         </div>
       </div>
-      <div class="center footer">TUCAT INTERIORES | DESDE-AÑO</div>
+      <div id="up"><i class="fas fa-angle-up"></i></div>
     </footer>
+    <section class="container-fluid center footer">
+      TUCAT INTERIORES | 2000 - <?php echo date('Y') ?>
+    </section>
 
-    <div id="up">UP</div>
 
     <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./libs/owl/owl.carousel.min.js"></script>
-    <script src="./js/effects.js"></script>
     <script>
-    $(document).ready(function(){
+      $('form').on('submit',function(e){
+        e.preventDefault();
 
-      var owl = $(".owl-slider").owlCarousel({
-        items: 1
-      });
+        var form_data = new FormData(this);
 
-      owl.on('changed.owl.carousel', function(event) {
-        /*VER TEMPLATE DE MEIXNER GROUP*/
-      });
+        $.ajax({
+          url : "enviarPrueba.php",
+          type: "POST",
+          data : form_data,
+          dataType : "json",
+          contentType: false,
+          cache: false,
+          processData:false
+        }).done(function(res) {
+          console.log('done')
+          console.log('res ', res)
+        });
 
-      $(".owl-works").owlCarousel();
-    });
+      })
     </script>
+    <script src="./js/effects.js"></script>
 </body>
 </html>
