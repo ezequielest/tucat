@@ -2,7 +2,12 @@
 $(window).on('load',function() {
     
     var owl = $(".owl-slider").owlCarousel({
-        items: 1
+        items: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        mouseDrag: false,
+        animateOut: 'fadeOut',
     });
 
     setTimeout(() => {
@@ -10,7 +15,6 @@ $(window).on('load',function() {
     }, 1000);
 
     $(".owl-works").owlCarousel();
-
 
     efectSlideWords()
 
@@ -23,19 +27,21 @@ $(window).on('load',function() {
 
 function efectSlideWords() {
     setTimeout(() => {
-        $('.item h3').css('display','block').addClass('animated slideInDown')
-    }, 2500);
+        $('.item h3').css('visibility','visible').addClass('animated slideInDown')
+    }, 2000);
 
     setTimeout(() => {
-        $('.item p').css('display','block').addClass('animated slideInDown')
-    }, 3500);
+        $('.item p').css('visibility','visible').addClass('animated slideInDown')
+    }, 3000);
 
-    resetEffect();
+    setTimeout(() => {
+        resetEffect();
+    }, 6000);
 }
 
 function resetEffect () {
-    $('.item h3').css('display','none').removeClass('animated slideInDown')
-    $('.item p').css('display','none').removeClass('animated slideInDown')
+    $('.item h3').css('visibility','hidden').removeClass('animated slideInDown')
+    $('.item p').css('visibility','hidden').removeClass('animated slideInDown')
 }
 
 
