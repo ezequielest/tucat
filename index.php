@@ -16,13 +16,13 @@
   <header>  
     
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><!--<img src="./img/tucat-logo.png"/>-->TUCAT</a>
+        <a class="navbar-brand" href="#"><img src="./img/tucat-logo.png"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end">
           <li class="nav-item active">
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -34,23 +34,16 @@
               Nuestros Servicios
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Oficinas</a>
-              <a class="dropdown-item" href="#">Placares y Vestidores</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Cocinas</a>
+                <a class="dropdown-item" href="#">Oficinas</a>
+                <a class="dropdown-item" href="#">Placares y Vestidores</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Cocinas</a>
               </div>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">Contactenos</a>
           </li>
-          <!--<li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>-->
           </ul>
-          <!--<form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>-->
         </div>
       </nav>
       
@@ -76,7 +69,7 @@
           while ($archivo = readdir($directory)) {
             if (!is_dir($archivo)) {
               ?>
-              <div class="item" style="background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(<?php echo $path . $archivo ?>); background-size: cover; height: 100vh">
+              <div class="item" style="background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .5)), url(<?php echo $path . $archivo ?>); background-size: cover; height: 100vh">
                 <div class="item-container">
                   <h3 style="visibility: hidden;"><?php echo $info[$i]["title"] ?></h3>
                   <p style="visibility: hidden;"><?php echo $info[$i]["description"] ?>.</p>
@@ -95,22 +88,22 @@
     <section id="elegir" class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h3 class="center">PORQUE ELEGIR</h3>
-          <h1 class="center">TUCAT INTERIORES</h1>
+          <h3 class="center light">PORQUE ELEGIR</h3>
+          <h1 class="center color-tucat bold">TUCAT INTERIORES</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 element">
             <i class="fas fa-ruler-combined center-block"></i>
             <h5 class="center">Amoblamientos a medida</h5>
             <p class="center">Trabajos 100% a gusto del cliente en equipamientos integrales para el hogar. Nos especializamos en optimizar los espacios disponibles.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 element">
             <i class="fas fa-dice-d6 center-block"></i>  
             <h5 class="center">Diseño y ergonomía en nuestros trabajos</h5>
             <p class="center">Contamos con la experiencia e idoneidad necesaria para trabajar las ideas de los proyectos y transformarlas en el mobiliario esperado, cumpliendo con los plazos y presupuestos pactados.</p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 element">
             <i class="fas fa-people-carry center-block"></i>
             <h5 class="center">Atención personalizada</h5>
             <p class="center">Siempre orientados a establecer un vínculo entre nuestro cliente y su mobiliario, es por tal motivo, que asesoramos cada propuesta en forma individual y vamos forjando juntos el proyecto a medida.</p>
@@ -121,51 +114,57 @@
     <section id="servicios">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-            <h3 class="center">ESTOS SON ALGUNOS DE</h3>
-            <h1 class="center">NUESTROS SERVICIOS</h1>
+          <div class="col-sm-12 title">
+            <h3 class="center light">ESTOS SON ALGUNOS DE</h3>
+            <h1 class="center bold">NUESTROS SERVICIOS</h1>
           </div>
         </div>
         <div class="row">
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-              <img src="./img/cocinas/home.jpg" class="card-img-top" alt="">
+              <div class="container-img">
+                <img src="./img/cocinas/home.jpg" class="card-img-top" alt="">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">COCINAS</h5>
                 <p class="card-text">Realizamos muebles de cocina enfocándonos en la comodidad, gusto y estilo del cliente. Analizando los espacios de cada vivienda obtenemos los mejores resultados espacio/diseño.</p>
-                <a href="#" class="btn btn-primary">ver más</a>
+                <a href="#" class="btn btn-tucat">ver más</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-              <img src="./img/placares-vestidores/home.jpg" class="card-img-top" alt="">
+              <div class="container-img">
+                <img src="./img/placares-vestidores/home.jpg" class="card-img-top" alt="">
+              </div>
               <div class="card-body">
                 <h5 class="card-title">PLACARES Y VESTIDORES</h5>
                 <p class="card-text">Diseños exclusivos a gusto de nuestros clientes. Nuestra diversidad de modelos y estilos de mobiliario, nos permite adaptar un perfil diferente a cada espacio de trabajo.</p>
-                <a href="#" class="btn btn-primary">ver más</a>
+                <a href="#" class="btn btn-tucat">ver más</a>
               </div>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
+              <div class="container-img">
                 <img src="./img/oficinas/home.jpg" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h5 class="card-title">OFICINAS</h5>
-                  <p class="card-text">Aprovechamos cada cm del establecimiento para sacar el máximo provecho, siempre manteniendo un excelente diseño y calidad del producto.</p>
-                  <a href="#" class="btn btn-primary">ver más</a>
-                </div>
               </div>
+              <div class="card-body">
+                <h5 class="card-title">OFICINAS</h5>
+                <p class="card-text">Aprovechamos cada cm del establecimiento para sacar el máximo provecho, siempre manteniendo un excelente diseño y calidad del producto.</p>
+                <a href="#" class="btn btn-tucat">ver más</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       </section>
 
     
-    <section id="works" class="container">
+    <section id="works" class="container-fluid">
 
       <h3 class="center">ALGUNOS DE NUESTROS</h3>
-      <h1 class="center">TRABAJOS REALIZADOS</h1>
+      <h1 class="center color-tucat bold">TRABAJOS REALIZADOS</h1>
 
       <div class="owl-works owl-carousel">
         <?php 
@@ -183,15 +182,16 @@
       </div>
     </section>
 
-    <footer class="container">
+    <footer>
+    <div class="container">
       <div class="row">
-        <div class="col-sm-12">
-          <h3 class="center">PORQUE ELEGIR</h3>
-          <h1 class="center">TUCAT INTERIORES</h1>
+        <div class="col-sm-12 title">
+          <h3 class="center light">ESTAMOS A SU DISPOSICIÓN</h3>
+          <h1 class="center color-tucat bold">CONTACTANOS</h1>
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-5">
+        <div class="col-sm-4">
           <form accept-charset="utf-8" enctype="multipart/form-data">
               <div class="form-group">
                 <label for="exampleFormControlInput1">Nombre</label>
@@ -213,25 +213,27 @@
                 <label for="exampleFormControlTextarea1">Attach File</label>
                 <input type="file" class="form-control" id="attachFile" name="attachFile" rows="3"></i>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-tucat">Submit</button>
             </form>
         </div>
+        <div class="col-sm-1"></div>
         <div class="col-sm-7">
             
             Ante cualquier duda o consulta no dude en contactarse con nosotros. <br>
             Complete el formulario y a la brevedad nos estaremos comunicando con usted. 
             
             Detalles de Contacto
-            <ul>
+            <ul class="contact-details">
               <li>Mar del Plata, Buenos Aires, Argentina</li>
               <li>0223 4702755</li>
               <li>+54 9 223511-0097</li>
-              <li>javier@tucatinteriores.com.ar</li>
+              <li><a href="mailto:javier@tucatinteriores.com.ar">javier@tucatinteriores.com.ar</a></li>
               <li>f</li>
             </ul>
         </div>
       </div>
       <div id="up"><i class="fas fa-angle-up"></i></div>
+      </div>
     </footer>
     <section class="container-fluid center footer">
       TUCAT INTERIORES | 2000 - <?php echo date('Y') ?>
