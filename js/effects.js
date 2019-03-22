@@ -20,7 +20,15 @@ $(window).on('load',function() {
         $('nav').animate({ opacity: 1 }, 1000);
     }, 1000);
 
-    $(".owl-works").owlCarousel();
+    $(".owl-works").owlCarousel({
+        navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"]
+    });
+
+    $(".owl-section").owlCarousel({
+        items: 1,
+        navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"]
+    });
+
 
     efectSlideWords();
 
@@ -41,6 +49,9 @@ $(window).on('load',function() {
                     $("body header nav.navbar").css("background-color","#000");
                     $("body header nav.navbar").css("padding","5px 40px");
                     $("body header nav.navbar").delay(100).fadeIn('slow');
+                    $("header nav a.navbar-brand img").css("height","40px");
+                    $("header nav ul.navbar-nav li").css("margin","0 10px");
+                    $("header nav ul.navbar-nav").css("border-bottom","none"); 
                 }
             } else {
                 $("body header nav.navbar").css("display","none");
@@ -48,6 +59,9 @@ $(window).on('load',function() {
                 $("body header nav.navbar").css("background-color","transparent");
                 $("body header nav.navbar").css("padding","40px 150px");
                 $("body header nav.navbar").delay(100).fadeIn('slow');
+                $("header nav a.navbar-brand img").css("height","60px");
+                $("header nav ul.navbar-nav li").css("margin","10px 40px");
+                ("header nav ul.navbar-nav").css("border-bottom","1px solid #fff;");
             }
           
         
@@ -81,7 +95,7 @@ $(window).scroll(function(){
 
     if (top > 50 ) {
         $('nav .navbar').css('background-color', '#fff').css('position', 'fixed');
-    }else{
+    } else {
         $('nav .navbar').css('background-color', 'transparent').css('position', 'flex');
     }
 

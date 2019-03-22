@@ -8,13 +8,13 @@ body header nav.navbar {
 	padding: 40px 150px;
 	position: absolute;
     width: 100%;
-    z-index: 9999;
+    z-index: 99;
     opacity: 0;
 }
 
 header nav a {
 	color: #fff !important;
-	z-index: 999999;
+	z-index: 999;
 	position: relative;
 }
 
@@ -83,10 +83,6 @@ header .slider .item p{
 	font-weight: 300;
 }
 
-#servicios {
-    background-color: #DD8500;
-}
-
 /**
 * ELEGIR
 */
@@ -126,18 +122,50 @@ header .slider .item p{
 * SERVICIOS
 **/
 
+#servicios {
+    background-color: #efa536;
+}
+
 #servicios .title {
 	color: #fff;
 }
 
 #servicios .card {
 	transform: translate(0, 0);
-	transition: all 1s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+#servicios .card-body {
+	min-height: 275px;
+}
+
+#servicios .card-body .card-title:after {
+	content: "";
+	width: 10%;
+	height: 2px;
+	background-color: #DD8500;
+	display: block;
+	margin-top: 10px;
+}
+
+#servicios .card img {
+	object-fit: cover;
 }
 
 #servicios .card:hover {
-	transform: translate(0px, -30px);
-	transition: all 1s ease-in;
+	transform: translate(0px, -10px);
+	transition: all 0.5s ease-in;
+	-webkit-box-shadow: 0px 0px 23px 2px rgba(255,255,255,1);
+	   -moz-box-shadow: 0px 0px 23px 2px rgba(255,255,255,1);
+	        box-shadow: 0px 0px 23px 2px rgba(255,255,255,1);
+}
+
+#servicios .card:hover img {
+	transform: scale(1.5);
+	transition: all 0.5s ease-in;
+	-webkit-box-shadow: 0px 0px 23px 2px rgba(255,255,255,1);
+	   -moz-box-shadow: 0px 0px 23px 2px rgba(255,255,255,1);
+	        box-shadow: 0px 0px 23px 2px rgba(255,255,255,1);
 }
 
 
@@ -169,8 +197,6 @@ header .slider .item p{
 	padding: 10px 100px !important;
 }
 
-
-
 /**
 * FOOTER
 **/
@@ -190,12 +216,33 @@ footer .contact-details {
 	margin-top: 20px;
 }
 
-footer .contact-details li{
+footer .contact-details li {
 	margin-top: 10px;
 }
 
-footer .contact-details a{
+footer .contact-details a {
+	text-decoration: none;
+}
+
+footer .contact-details a.email {
 	color: #DD8500;
+}
+
+footer .contact-details a.redes {
+	color: #fff;
+}
+
+footer .contact-details a.redes i {
+	margin-right: 20px;
+	margin-top: 30px;
+}
+
+footer .contact-details a.redes i.fa-facebook-f {
+	font-size: 34px;
+}
+
+footer .contact-details a.redes i.fa-instagram {
+	font-size: 40px;
 }
 
 section.footer {
@@ -205,7 +252,7 @@ section.footer {
     height: 40px;
     background: #000;
     color: #fff;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #up {
@@ -219,6 +266,39 @@ section.footer {
     left: 100%;
 }
 
+/***********************
+* SECTION PRODUCT
+**************************/
+
+#sectionProducts {
+	min-height: 100vh;
+	padding-top: 220px;
+}
+
+#sectionProducts .container-product {
+	height: 200px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: bottom center;
+}
+
+#lightgallery li {
+	margin-bottom: 20px;
+}
+
+#lightgallery li a {
+	display:none;
+}
+
+#sectionProducts h3 {
+	color:#fff;	
+}
+
+#sectionProducts .list-folders {
+	overflow-y: scroll;
+	height: 700px;
+}
+ 
 /**
 * GENERALS
 **/
@@ -244,7 +324,7 @@ section:not(.slider):not(.footer), footer {
 }
 
 section h1{
-	margin-bottom: 60px;
+	margin-bottom: 80px;
 }
 
 .center {

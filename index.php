@@ -126,9 +126,9 @@
                 <img src="./img/cocinas/home.jpg" class="card-img-top" alt="">
               </div>
               <div class="card-body">
-                <h5 class="card-title">COCINAS</h5>
+                <h5 class="card-title bold">COCINAS</h5>
                 <p class="card-text">Realizamos muebles de cocina enfocándonos en la comodidad, gusto y estilo del cliente. Analizando los espacios de cada vivienda obtenemos los mejores resultados espacio/diseño.</p>
-                <a href="#" class="btn btn-tucat">ver más</a>
+                <a href="section-products.php?section=cocinas" class="btn btn-tucat">ver más</a>
               </div>
             </div>
           </div>
@@ -138,9 +138,9 @@
                 <img src="./img/placares-vestidores/home.jpg" class="card-img-top" alt="">
               </div>
               <div class="card-body">
-                <h5 class="card-title">PLACARES Y VESTIDORES</h5>
+                <h5 class="card-title bold">PLACARES Y VESTIDORES</h5>
                 <p class="card-text">Diseños exclusivos a gusto de nuestros clientes. Nuestra diversidad de modelos y estilos de mobiliario, nos permite adaptar un perfil diferente a cada espacio de trabajo.</p>
-                <a href="#" class="btn btn-tucat">ver más</a>
+                <a href="section-products.php?section=pyv" class="btn btn-tucat">ver más</a>
               </div>
             </div>
           </div>
@@ -150,9 +150,9 @@
                 <img src="./img/oficinas/home.jpg" class="card-img-top" alt="">
               </div>
               <div class="card-body">
-                <h5 class="card-title">OFICINAS</h5>
+                <h5 class="card-title bold">OFICINAS</h5>
                 <p class="card-text">Aprovechamos cada cm del establecimiento para sacar el máximo provecho, siempre manteniendo un excelente diseño y calidad del producto.</p>
-                <a href="#" class="btn btn-tucat">ver más</a>
+                <a href="section-products.php?section=oficinas" class="btn btn-tucat">ver más</a>
               </div>
             </div>
           </div>
@@ -227,8 +227,8 @@
               <li>Mar del Plata, Buenos Aires, Argentina</li>
               <li>0223 4702755</li>
               <li>+54 9 223511-0097</li>
-              <li><a href="mailto:javier@tucatinteriores.com.ar">javier@tucatinteriores.com.ar</a></li>
-              <li>f</li>
+              <li><a class="email" href="mailto:javier@tucatinteriores.com.ar">javier@tucatinteriores.com.ar</a></li>
+              <li><a class="redes" href="https://www.facebook.com/Tucat-Interiores-126284884104042/"><i class="fab fa-facebook-f"></i> <i class="fab fa-instagram"></i></li>
             </ul>
         </div>
       </div>
@@ -236,7 +236,7 @@
       </div>
     </footer>
     <section class="container-fluid center footer">
-      TUCAT INTERIORES | 2000 - <?php echo date('Y') ?>
+    © TUCAT INTERIORES | 2000 - <?php echo date('Y') ?>
     </section>
 
 
