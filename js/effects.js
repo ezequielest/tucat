@@ -1,4 +1,3 @@
-
 $(window).on('load',function() {
     
     var owl = $(".owl-slider").owlCarousel({
@@ -21,6 +20,9 @@ $(window).on('load',function() {
     }, 1000);
 
     $(".owl-works").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
         navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"]
     });
 
@@ -28,7 +30,6 @@ $(window).on('load',function() {
         items: 1,
         navText: ["<i class='fas fa-long-arrow-alt-left'></i>", "<i class='fas fa-long-arrow-alt-right'></i>"]
     });
-
 
     efectSlideWords();
 
@@ -51,7 +52,7 @@ $(window).on('load',function() {
                     $("body header nav.navbar").delay(100).fadeIn('slow');
                     $("header nav a.navbar-brand img").css("height","40px");
                     $("header nav ul.navbar-nav li").css("margin","0 10px");
-                    $("header nav ul.navbar-nav").css("border-bottom","none"); 
+                    $("header nav ul.navbar-nav").css("border-bottom","0px"); 
                 }
             } else {
                 $("body header nav.navbar").css("display","none");
@@ -61,13 +62,10 @@ $(window).on('load',function() {
                 $("body header nav.navbar").delay(100).fadeIn('slow');
                 $("header nav a.navbar-brand img").css("height","60px");
                 $("header nav ul.navbar-nav li").css("margin","10px 40px");
-                ("header nav ul.navbar-nav").css("border-bottom","1px solid #fff;");
+                $("header nav ul.navbar-nav").css("border-bottom","1px solid #fff;");
             }
-          
-        
         });
     })
-
 
 });
 

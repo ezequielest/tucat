@@ -14,7 +14,6 @@
 </head>
 <body>
   <header>  
-    
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><img src="./img/tucat-logo.png"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,30 +23,22 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav justify-content-end">
           <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Galería</a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Nuestros Servicios
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Oficinas</a>
-                <a class="dropdown-item" href="#">Placares y Vestidores</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cocinas</a>
-              </div>
+              <a class="nav-link" href="#servicios">Nuestros Servicios</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Contactenos</a>
+              <a class="nav-link" href="#works">Trabajos</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contactenos</a>
           </li>
           </ul>
         </div>
       </nav>
       
-      <section class="slider">
+      <section id="home" class="slider">
         <!-- Set up your HTML -->
         <div class="owl-slider owl-carousel">
         <?php 
@@ -123,7 +114,7 @@
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
               <div class="container-img">
-                <img src="./img/cocinas/home.jpg" class="card-img-top" alt="">
+                <div class="img" style="background-image: url(./img/cocinas/home.jpg)"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title bold">COCINAS</h5>
@@ -135,7 +126,7 @@
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
               <div class="container-img">
-                <img src="./img/placares-vestidores/home.jpg" class="card-img-top" alt="">
+                <div class="img" style="background-image: url(./img/placares-vestidores/home.jpg)"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title bold">PLACARES Y VESTIDORES</h5>
@@ -147,7 +138,7 @@
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
               <div class="container-img">
-                <img src="./img/oficinas/home.jpg" class="card-img-top" alt="">
+                <div class="img" style="background-image: url(./img/oficinas/home.jpg)"></div>
               </div>
               <div class="card-body">
                 <h5 class="card-title bold">OFICINAS</h5>
@@ -182,7 +173,7 @@
       </div>
     </section>
 
-    <footer>
+    <footer id="contacto">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 title">
